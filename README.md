@@ -1,5 +1,7 @@
 jSlideShow is a very simple and easy to integrate image slideshow plugin. There are only two available slide transitions (fade and slide) that can be used. This image slideshow plugin requires jQuery.
 
+Demo: http://jslideshow.therookieblog.com/
+
 Example of usage:
 ```html
 <!--somewhere in the <body> -->
