@@ -54,3 +54,5 @@ Another example with custom size (400x200), time delay (4 seconds), and animatio
 	});
 </script>
 ```
+
+There are other example in the index.html
