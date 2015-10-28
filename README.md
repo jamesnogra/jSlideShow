@@ -7,8 +7,7 @@ Example of usage:
 
 <!--javascript code -->
 <script>
-  $(document).ready(function() {
-		//basic slideshow example
+	$(document).ready(function() {
 		var image_list = [
 			"images/dog1.jpg",
 			"images/doge.jpg",
@@ -16,6 +15,23 @@ Example of usage:
 			"images/two.gif",
 		];
 		var test1 = new jSlideShow("my-pictures", image_list);
-  });
+	});
+</script>
+```
+
+Another example with custom size (700x250) and delay transition (3 seconds)
+```html
+<!--somewhere in the <body> -->
+<div id="slideshow"></div>
+
+<!--javascript code -->
+<script>
+	$(document).ready(function() {
+		var another_list = [
+			"images/dog1.jpg",
+			"images/doge.jpg"
+		];
+		var test2 = new jSlideShow("slideshow", another_list, 3000, 700, 250);
+	});
 </script>
 ```
