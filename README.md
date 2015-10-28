@@ -8,14 +8,14 @@ Example of usage:
 <!--javascript code -->
 <script>
   $(document).ready(function() {
-  			//basic slideshow example
-  			var image_list = [
-  				"images/dog1.jpg",
-  				"images/doge.jpg",
-  				"images/1.gif",
-  				"images/two.gif",
-  			];
-  			var test1 = new jSlideShow("my-pictures", image_list);
+		//basic slideshow example
+		var image_list = [
+			"images/dog1.jpg",
+			"images/doge.jpg",
+			"images/1.gif",
+			"images/two.gif",
+		];
+		var test1 = new jSlideShow("my-pictures", image_list);
   });
 </script>
 ```
