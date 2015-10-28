@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html>
+
+	<head>
+		<title>Simple Slideshow</title>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="jSlideShow.js"></script>
+	</head>
+	
+	<body>
+		<h1>Basic jSlideShow Demo</h1>
+		<div id="my-pictures"></div>
+		<h1>Using Remote Images and 1-second delay transition</h1>
+		<div id="another-slideshow"></div>
+		<h1>Using Remote Images, 2 seconds delay transition, 500x200 slideshow display size, and slide transition animation</h1>
+		<div id="big-slideshow"></div>
+		<h3>Footer Here</h3>
+	</body>
+	
+	<script>
+		$(document).ready(function() {
+		
+		
+			//basic slideshow example
+			var image_list = [
+				"images/dog1.jpg",
+				"images/doge.jpg",
+				"images/1.gif",
+				"images/two.gif",
+			];
+			var test1 = new jSlideShow("my-pictures", image_list);
+			
+			
+			//using remote images and only 1 second delay transition
+			var image_list_1 = [
+				"http://jogos-para-android.com/wp-content/uploads/2015/05/Clash-of-Clans-e1392659745720.png",
+				"http://wpuploads.appadvice.com/wp-content/uploads/2013/10/Clash-of-Clans-for-iPad-1.jpg",
+				"http://images.gamenguide.com/data/images/full/21768/clash-of-clans.jpg?w=720",
+			];
+			var test2 = new jSlideShow("another-slideshow", image_list_1, 1000);
+			
+			
+			//using remote images, 2 seconds delay transition, slideshow size is 500x200, and animation type is slide
+			var image_list_2 = [
+				"http://i2.wp.com/clashofclansforpcc.com/wp-content/uploads/2014/06/clash-of-clans-for-pc.png?resize=500%2C300",
+				"http://wpuploads.appadvice.com/wp-content/uploads/2013/10/Clash-of-Clans-for-iPad-1.jpg",
+				"http://jogos-para-android.com/wp-content/uploads/2015/05/Clash-of-Clans-e1392659745720.png",
+				"https://clashfordummiesdotcom.files.wordpress.com/2015/07/clash-of-clans-wallpaper-7.png",
+				"http://images.gamenguide.com/data/images/full/21768/clash-of-clans.jpg?w=720",
+			];
+			var test3 = new jSlideShow("big-slideshow", image_list_2, 2000, 500, 200, "slide");
+			
+		});
+	</script>
+
+</html>
